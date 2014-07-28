@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--L'attributo "acceptLicense" è stato dichiarato obsoleto. Utilizzare l'opzione della riga comandi "-acceptLicense" per accettare gli accordi di licenza.-->
+<agent-input acceptLicense='true'>
+<preference name='com.ibm.cic.common.core.preferences.eclipseCache' value='/opt/IBM/IBMIMShared'/>
+<preference name='com.ibm.cic.common.core.preferences.connectTimeout' value='30'/>
+<preference name='com.ibm.cic.common.core.preferences.readTimeout' value='45'/>
+<preference name='com.ibm.cic.common.core.preferences.downloadAutoRetryCount' value='0'/>
+<preference name='offering.service.repositories.areUsed' value='true'/>
+<preference name='com.ibm.cic.common.core.preferences.ssl.nonsecureMode' value='false'/>
+<preference name='com.ibm.cic.common.core.preferences.http.disablePreemptiveAuthentication' value='false'/>
+<preference name='http.ntlm.auth.kind' value='NTLM'/>
+<preference name='http.ntlm.auth.enableIntegrated.win32' value='true'/>
+<preference name='com.ibm.cic.common.core.preferences.preserveDownloadedArtifacts' value='true'/>
+<preference name='com.ibm.cic.common.core.preferences.keepFetchedFiles' value='false'/>
+<preference name='PassportAdvantageIsEnabled' value='false'/>
+<preference name='com.ibm.cic.common.core.preferences.searchForUpdates' value='false'/>
+<preference name='com.ibm.cic.agent.ui.displayInternalVersion' value='false'/>
+<preference name='com.ibm.cic.common.sharedUI.showErrorLog' value='true'/>
+<preference name='com.ibm.cic.common.sharedUI.showWarningLog' value='true'/>
+<preference name='com.ibm.cic.common.sharedUI.showNoteLog' value='true'/>
+<server>
+<repository location='/tmp/WEX_v9.0.0.4-se/ide-offering'/>
+</server>
+<profile id='IBM Watson Explorer' installLocation='/opt/ibm/IDE'>
+<data key='eclipseLocation' value='/opt/ibm/IDE'/>
+<data key='user.import.profile' value='false'/>
+<data key='cic.selector.os' value='linux'/>
+<data key='cic.selector.arch' value='x86_64'/>
+<data key='cic.selector.ws' value='gtk'/>
+<data key='cic.selector.nl' value='en'/>
+<data key='user.installGroupName,com.ibm.ide.se' value='apache'/>
+<data key='user.installUserName,com.ibm.ide.se' value='apache'/>
+<data key='user.appBuilderServiceName,com.ibm.ide.se' value='appbuilder-service-default'/>
+<data key='user.LDAPBindPassword,com.ibm.ide.se' value=''/>
+<data key='user.appBuilderServiceUser,com.ibm.ide.se' value='apache'/>
+<data key='user.LDAPBaseDN,com.ibm.ide.se' value=''/>
+<data key='user.enableSSL,com.ibm.ide.se' value='false'/>
+<data key='user.appBuilderServerName,com.ibm.ide.se' value='AppBuilder'/>
+<data key='user.LDAPPort,com.ibm.ide.se' value='389'/>
+<data key='user.LDAPUserIdMap,com.ibm.ide.se' value=''/>
+<data key='user.appBuilderZooKeeperNamespace,com.ibm.ide.se' value='production'/>
+<data key='user.LDAPIgnoreCase,com.ibm.ide.se' value='true'/>
+<data key='user.enableLDAP,com.ibm.ide.se' value='false'/>
+<data key='user.LDAPUserFilter,com.ibm.ide.se' value=''/>
+<data key='user.appBuilderZooKeeperInstances,com.ibm.ide.se' value='localhost:2181'/>
+<data key='user.LDAPBindPassword2,com.ibm.ide.se' value=''/>
+<data key='user.LDAPBindDN,com.ibm.ide.se' value=''/>
+<data key='user.skipServiceApplication Builder,com.ibm.ide.se' value='false'/>
+<data key='user.LDAPHostName,com.ibm.ide.se' value='ldap.sample.com'/>
+<data key='user.appBuilderPort,com.ibm.ide.se' value='8080'/>
+<data key='user.enginePort,com.ibm.ide.se' value='9080'/>
+<data key='user.engineEnableWebserver,com.ibm.ide.se' value='false'/>
+<data key='user.knowledgeCenterLocation,com.ibm.ide.se' value='http://localhost:9090/kc/SS8NLW_9.0.0'/>
+<data key='user.knowledgeCenterServiceName,com.ibm.ide.se' value='knowledgecenter-service-default'/>
+<data key='user.knowledgeCenterServiceUser,com.ibm.ide.se' value='apache'/>
+<data key='user.knowledgeCenterPort,com.ibm.ide.se' value='9090'/>
+<data key='user.knowledgeCenterVirtualDir,com.ibm.ide.se' value='kc'/>
+<data key='user.knowledgeCenterHost,com.ibm.ide.se' value='localhost'/>
+<data key='user.skipServiceKnowledge Center,com.ibm.ide.se' value='false'/>
+<data key='user.knowledgeCenterUpdateConfig,com.ibm.ide.se' value='true'/>
+<data key='user.resultsModuleServiceName,com.ibm.ide.se' value='resultsmodule-service-default'/>
+<data key='user.resultsModulePort,com.ibm.ide.se' value='8081'/>
+<data key='user.resultsModuleServiceUser,com.ibm.ide.se' value='apache'/>
+<data key='user.skipServiceResults Module,com.ibm.ide.se' value='false'/>
+<data key='user.resultsModuleServerName,com.ibm.ide.se' value='ResultsModule'/>
+<data key='user.zookeeperServiceName,com.ibm.ide.se' value='zookeeper-service-default'/>
+<data key='user.zookeeperMyId,com.ibm.ide.se' value='1'/>
+<data key='user.zookeeperInstances,com.ibm.ide.se' value='server.1=localhost:16777:16888'/>
+<data key='user.zookeeperExtra,com.ibm.ide.se' value='initLimit=1000&#10;syncLimit=1000&#10;tickTime=2000&#10;autopurge.snapRetainCount=3&#10;autopurge.purgeInterval=1'/>
+<data key='user.zookeeperServiceUser,com.ibm.ide.se' value='apache'/>
+<data key='user.skipServiceZooKeeper,com.ibm.ide.se' value='false'/>
+<data key='user.zookeeperDataDir,com.ibm.ide.se' value='/opt/ibm/IDE/ZooKeeperData'/>
+<data key='user.zookeeperPort,com.ibm.ide.se' value='2181'/>
+<data key='user.zookeeperExtraEscaped,com.ibm.ide.se' value='initLimit=1000&amp;#10;syncLimit=1000&amp;#10;tickTime=2000&amp;#10;autopurge.snapRetainCount=3&amp;#10;autopurge.purgeInterval=1'/>
+<data key='user.zookeeperInstancesEscaped,com.ibm.ide.se' value='server.1=localhost:16777:16888'/>
+</profile>
+<install modify='false'>
+<offering id='com.ibm.ide.se' version='9.0.4.20140707_0223' profile='IBM Watson Explorer' features='com.ibm.ide.appbuilder.feature,com.ibm.ide.bigindex.feature,com.ibm.ide.engine.feature,com.ibm.ide.knowledgecenter.feature,com.ibm.ide.resultsmodule.feature,com.ibm.ide.zookeeper.feature' installFixes='none'/>
+</install>
+</agent-input>

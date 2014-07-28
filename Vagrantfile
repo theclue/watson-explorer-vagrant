@@ -18,8 +18,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "centos65-x86_64-20140116"
   config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.4.2/centos64-x86_64-20140116.box"
   config.vm.define "we-engine" do |master|
-    master.vm.network :public_network, :bridge => 'eth0'
-    master.vm.network :private_network, ip: "#{privateSubnet}.#{privateStartingIp}", :netmask => "255.255.255.0", virtualbox__intnet: "we-network"
+    master.vm.network :public_network
+    master.vm.network :private_network, ip: "#{privateSubnet}.#{privateStartingIp}", virtualbox__intnet: "we-network"
     master.vm.hostname = "we-engine"
 
     master.vm.provider "vmware_fusion" do |v|
@@ -28,7 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     master.vm.provider :virtualbox do |v|
       v.name = "Watson Explorer 4.0 - Engine"
       v.customize ["modifyvm", :id, "--memory", "#{ram}"]
-      file_to_disk = File.realpath( "." ).to_s + "/" + v.name + "_secondary_hdd.vdi"
+      file_to_disk = File.realpath( "." ).to_s + "/" + master.vm.hostname.to_s + "_secondary_hdd.vdi"
       if ARGV[0] == "up" && ! File.exist?(file_to_disk)
         v.customize ['storagectl', :id, '--name', 'SATA', '--portcount', 2, '--hostiocache', 'on']
         v.customize ['createhd', '--filename', file_to_disk, '--format', 'VDI', '--size', "#{secondaryStorage * 1024}"]
